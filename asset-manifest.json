@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/natgram/static/css/main.7cd07dbb.chunk.css",
+    "main.js": "/natgram/static/js/main.7f293578.chunk.js",
+    "main.js.map": "/natgram/static/js/main.7f293578.chunk.js.map",
+    "runtime-main.js": "/natgram/static/js/runtime-main.a222f3ea.js",
+    "runtime-main.js.map": "/natgram/static/js/runtime-main.a222f3ea.js.map",
+    "static/css/2.1e505fbe.chunk.css": "/natgram/static/css/2.1e505fbe.chunk.css",
+    "static/js/2.912ff3ab.chunk.js": "/natgram/static/js/2.912ff3ab.chunk.js",
+    "static/js/2.912ff3ab.chunk.js.map": "/natgram/static/js/2.912ff3ab.chunk.js.map",
+    "static/js/3.7b30a119.chunk.js": "/natgram/static/js/3.7b30a119.chunk.js",
+    "static/js/3.7b30a119.chunk.js.map": "/natgram/static/js/3.7b30a119.chunk.js.map",
+    "index.html": "/natgram/index.html",
+    "static/css/2.1e505fbe.chunk.css.map": "/natgram/static/css/2.1e505fbe.chunk.css.map",
+    "static/css/main.7cd07dbb.chunk.css.map": "/natgram/static/css/main.7cd07dbb.chunk.css.map",
+    "static/js/2.912ff3ab.chunk.js.LICENSE.txt": "/natgram/static/js/2.912ff3ab.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a222f3ea.js",
+    "static/css/2.1e505fbe.chunk.css",
+    "static/js/2.912ff3ab.chunk.js",
+    "static/css/main.7cd07dbb.chunk.css",
+    "static/js/main.7f293578.chunk.js"
+  ]
+}
