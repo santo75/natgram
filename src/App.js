@@ -10,7 +10,6 @@ function App() {
 		{ url: "profilePic.jpeg", userName: "_s_k_y_29" },
 		{ url: "profilePic.jpeg", userName: "_s_k_y_29" },
 		{ url: "profilePic.jpeg", userName: "_s_k_y_29" },
-		{ url: "profilePic.jpeg", userName: "_s_k_y_29" },
 	];
 	const posts = [
 		{ url: "collegeImage.jpg", userName: "_s_k_y_29", liked: false },
