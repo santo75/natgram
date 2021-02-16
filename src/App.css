@@ -1,38 +1,89 @@
 .App {
-  text-align: center;
+	background-color: #ebe9e4;
+	height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-name {
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.full-name {
+	font-size: 14px;
+	font-weight: 500;
+	color: #a3a096;
+	margin: 0;
+	padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bio {
+	font-size: 14px;
+	padding: 8px;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-bar {
+	border-bottom: 1px solid grey;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-profile-pic-container {
+	height: 28px;
+	width: 28px;
+	border: 1px solid black;
+	border-radius: 50%;
+	padding: 1px;
+}
+.profile-pic {
+	border-radius: 50%;
+}
+.natgram-text {
+	font-family: "Pacifico", cursive;
+}
+.natgram-feed-story {
+	border: 1px solid grey;
+	border-radius: 4px;
+	padding: 8px;
+}
+.story-image {
+	border-radius: 50%;
+}
+.story {
+	height: 70px;
+	width: 70px;
+	border: 2px solid rgb(168, 4, 4);
+	border-radius: 50%;
+	padding: 2px;
+}
+.story-user-name {
+	padding: 0;
+	margin: 0 12px 0 0;
+	font-size: 12px;
+	font-weight: 500;
+	color: #a3a096;
+}
+.natgram-feed-post {
+	border: 1px solid grey;
+	border-radius: 4px;
+}
+.feed-post-profile-pic {
+	height: 40px;
+	width: 40px;
+	border: 2px solid rgb(168, 4, 4);
+	border-radius: 50%;
+	padding: 1px;
+}
+.feed-post-user-name {
+	padding: 0;
+	margin: 0 0 0 8px;
+	font-size: 13px;
+	font-weight: bold;
+}
+i:hover {
+	cursor: pointer;
+}
+.like-text {
+	margin: -5px 0 5px 0;
+	padding: 0;
+	font-size: 12px;
+}
+.profile {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
 }
