@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/natgram/static/css/main.7cd07dbb.chunk.css",
-    "main.js": "/natgram/static/js/main.f2b35a36.chunk.js",
-    "main.js.map": "/natgram/static/js/main.f2b35a36.chunk.js.map",
+    "main.js": "/natgram/static/js/main.f53640fb.chunk.js",
+    "main.js.map": "/natgram/static/js/main.f53640fb.chunk.js.map",
     "runtime-main.js": "/natgram/static/js/runtime-main.a222f3ea.js",
     "runtime-main.js.map": "/natgram/static/js/runtime-main.a222f3ea.js.map",
     "static/css/2.1e505fbe.chunk.css": "/natgram/static/css/2.1e505fbe.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.1e505fbe.chunk.css",
     "static/js/2.912ff3ab.chunk.js",
     "static/css/main.7cd07dbb.chunk.css",
-    "static/js/main.f2b35a36.chunk.js"
+    "static/js/main.f53640fb.chunk.js"
   ]
 }
