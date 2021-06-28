@@ -11,8 +11,8 @@ const Post = props => {
 				<div className="d-flex flex-column justify-content-center">
 					<p className="feed-post-user-name">{userName}</p>
 				</div>
-				<div className="d-flex flex-column justify-content-center ml-auto">
-					<i className="fa fa-ellipsis-h ml-auto" aria-hidden="true"></i>
+				<div className="d-flex flex-column justify-content-center ms-auto">
+					<i className="fa fa-ellipsis-h ms-auto" aria-hidden="true"></i>
 				</div>
 			</div>
 			<div className="feed-post-middle-section w-100">
@@ -20,17 +20,17 @@ const Post = props => {
 				<div className="d-flex flex-row px-2 my-2">
 					<i
 						className={
-							liked ? "fa fa-2x mr-2 fa-heart" : "fa fa-2x mr-2 fa-heart-o"
+							liked ? "fa fa-2x me-2 fa-heart" : "fa fa-2x me-2 fa-heart-o"
 						}
 						onClick={() => onLike(id)}
 					></i>
-					<i className="fa fa-comment-o mr-2 fa-2x"></i>
-					<i className="fa fa-send-o mr-2 fa-2x"></i>
+					<i className="fa fa-comment-o me-2 fa-2x"></i>
+					<i className="fa fa-send-o me-2 fa-2x"></i>
 					<i
 						className={
 							bookmarked
-								? "fa fa-bookmark ml-auto fa-2x"
-								: "fa fa-bookmark-o ml-auto fa-2x"
+								? "fa fa-bookmark ms-auto fa-2x"
+								: "fa fa-bookmark-o ms-auto fa-2x"
 						}
 						onClick={() => onSave(id)}
 					></i>

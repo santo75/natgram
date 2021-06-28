@@ -2,7 +2,7 @@ import profilePic from "../assets/image/profilePic.jpeg";
 
 const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light bg-light">
+		<nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<div className="container-fluid">
 				<a className="navbar-brand natgram-text" href="#">
 					NATGRAM
@@ -19,7 +19,7 @@ const Navbar = () => {
 					<span className="navbar-toggler-icon"></span>
 				</button>
 				<div className="collapse navbar-collapse" id="navbarNav">
-					<ul className="navbar-nav  ml-auto">
+					<ul className="navbar-nav  ms-auto">
 						<li className="nav-item active">
 							<a className="nav-link" href="#">
 								<i className="fa fa-home"></i>

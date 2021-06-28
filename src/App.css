@@ -39,6 +39,7 @@
 	border: 1px solid grey;
 	border-radius: 4px;
 	padding: 8px;
+	overflow-x: auto;
 }
 .story-image {
 	border-radius: 50%;
