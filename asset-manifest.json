@@ -1,25 +1,27 @@
 {
   "files": {
     "main.css": "/natgram/static/css/main.7cd07dbb.chunk.css",
-    "main.js": "/natgram/static/js/main.f53640fb.chunk.js",
-    "main.js.map": "/natgram/static/js/main.f53640fb.chunk.js.map",
-    "runtime-main.js": "/natgram/static/js/runtime-main.a222f3ea.js",
-    "runtime-main.js.map": "/natgram/static/js/runtime-main.a222f3ea.js.map",
-    "static/css/2.1e505fbe.chunk.css": "/natgram/static/css/2.1e505fbe.chunk.css",
-    "static/js/2.912ff3ab.chunk.js": "/natgram/static/js/2.912ff3ab.chunk.js",
-    "static/js/2.912ff3ab.chunk.js.map": "/natgram/static/js/2.912ff3ab.chunk.js.map",
-    "static/js/3.7b30a119.chunk.js": "/natgram/static/js/3.7b30a119.chunk.js",
-    "static/js/3.7b30a119.chunk.js.map": "/natgram/static/js/3.7b30a119.chunk.js.map",
+    "main.js": "/natgram/static/js/main.0f77ef59.chunk.js",
+    "main.js.map": "/natgram/static/js/main.0f77ef59.chunk.js.map",
+    "runtime-main.js": "/natgram/static/js/runtime-main.212e2a46.js",
+    "runtime-main.js.map": "/natgram/static/js/runtime-main.212e2a46.js.map",
+    "static/css/2.92f9b39e.chunk.css": "/natgram/static/css/2.92f9b39e.chunk.css",
+    "static/js/2.26b9a001.chunk.js": "/natgram/static/js/2.26b9a001.chunk.js",
+    "static/js/2.26b9a001.chunk.js.map": "/natgram/static/js/2.26b9a001.chunk.js.map",
+    "static/js/3.dc63a29e.chunk.js": "/natgram/static/js/3.dc63a29e.chunk.js",
+    "static/js/3.dc63a29e.chunk.js.map": "/natgram/static/js/3.dc63a29e.chunk.js.map",
     "index.html": "/natgram/index.html",
-    "static/css/2.1e505fbe.chunk.css.map": "/natgram/static/css/2.1e505fbe.chunk.css.map",
+    "static/css/2.92f9b39e.chunk.css.map": "/natgram/static/css/2.92f9b39e.chunk.css.map",
     "static/css/main.7cd07dbb.chunk.css.map": "/natgram/static/css/main.7cd07dbb.chunk.css.map",
-    "static/js/2.912ff3ab.chunk.js.LICENSE.txt": "/natgram/static/js/2.912ff3ab.chunk.js.LICENSE.txt"
+    "static/js/2.26b9a001.chunk.js.LICENSE.txt": "/natgram/static/js/2.26b9a001.chunk.js.LICENSE.txt",
+    "static/media/collegeImage.887bf62d.jpg": "/natgram/static/media/collegeImage.887bf62d.jpg",
+    "static/media/profilePic.8469a897.jpeg": "/natgram/static/media/profilePic.8469a897.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a222f3ea.js",
-    "static/css/2.1e505fbe.chunk.css",
-    "static/js/2.912ff3ab.chunk.js",
+    "static/js/runtime-main.212e2a46.js",
+    "static/css/2.92f9b39e.chunk.css",
+    "static/js/2.26b9a001.chunk.js",
     "static/css/main.7cd07dbb.chunk.css",
-    "static/js/main.f53640fb.chunk.js"
+    "static/js/main.0f77ef59.chunk.js"
   ]
 }
