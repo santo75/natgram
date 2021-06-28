@@ -39,7 +39,7 @@ class Home extends Component {
 				<div className="container">
 					<div className="row">
 						<div className="col-12 col-md-8 mt-5">
-							<div className="natgram-feed-story bg-light mt-4 d-flex flex-row justify-content-center">
+							<div className="natgram-feed-story bg-light mt-4 d-flex flex-row">
 								{this.state.stories.map(story => (
 									<Story
 										key={story.id}
