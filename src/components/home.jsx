@@ -38,7 +38,7 @@ class Home extends Component {
 				<Navbar className="d-none d-md-block" />
 				<div className="container">
 					<div className="row">
-						<div className="col-12 col-md-7 mt-md-5">
+						<div className="col-12 col-md-7 mt-5">
 							<div className="natgram-feed-story bg-light mt-4 d-flex flex-row">
 								{this.state.stories.map(story => (
 									<Story
