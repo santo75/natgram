@@ -38,8 +38,8 @@ class Home extends Component {
 				<Navbar className="d-none d-md-block" />
 				<div className="container">
 					<div className="row">
-						<div className="col-12 col-md-7 mt-5">
-							<div className="natgram-feed-story bg-light mt-4 d-flex flex-row">
+						<div className="col-12 col-md-8 mt-5">
+							<div className="natgram-feed-story bg-light mt-4 d-flex flex-row justify-content-center">
 								{this.state.stories.map(story => (
 									<Story
 										key={story.id}
@@ -64,7 +64,7 @@ class Home extends Component {
 							</div>
 						</div>
 						<div className="col-1"></div>
-						<div className="col-12 col-md-4 d-none d-md-block mt-md-5">
+						<div className="col-12 col-md-3 d-none d-md-block mt-md-5">
 							<Profile userName="_s_k_y_29" fullName="Santosh Kumar Yadav" />
 						</div>
 					</div>
