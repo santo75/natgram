@@ -1,3 +1,5 @@
+import profilePic from "../assets/image/profilePic.jpeg";
+
 const Navbar = () => {
 	return (
 		<nav className="navbar nav-bar navbar-expand-lg navbar-light bg-light px-5">
@@ -37,7 +39,7 @@ const Navbar = () => {
 							<div className="nav-profile-pic-container d-flex flex-column justify-content-center">
 								<img
 									className="profile-pic"
-									src="profilePic.jpeg"
+									src={profilePic}
 									alt="prfile_pic"
 								/>
 							</div>
