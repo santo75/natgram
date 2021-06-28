@@ -1,7 +1,7 @@
 import profilePic from "../assets/image/profilePic.jpeg";
 
 const Post = props => {
-	const { url, userName, liked, id, onLike } = props;
+	const { url, userName, liked, bookmarked, id, onLike, onSave } = props;
 	return (
 		<div className="mb-3 bg-light w-100 natgram-feed-post">
 			<div className="feed-post-top-section p-2 d-flex flex-row">
@@ -26,7 +26,14 @@ const Post = props => {
 					></i>
 					<i className="fa fa-comment-o mr-2 fa-2x"></i>
 					<i className="fa fa-send-o mr-2 fa-2x"></i>
-					<i className="fa fa-bookmark-o ml-auto fa-2x"></i>
+					<i
+						className={
+							bookmarked
+								? "fa fa-bookmark ml-auto fa-2x"
+								: "fa fa-bookmark-o ml-auto fa-2x"
+						}
+						onClick={() => onSave(id)}
+					></i>
 				</div>
 				<div className="p-2">
 					<p className="like-text">

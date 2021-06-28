@@ -1,43 +1,34 @@
 import React, { Component } from "react";
-import image from "../assets/image/collegeImage.jpg";
-import profilePic from "../assets/image/profilePic.jpeg";
 import Story from "../common/story";
 import Post from "../common/post";
 import Profile from "../common/profile";
 import Navbar from "../common/navbar";
+import posts from "../data/postList.js";
+import stories from "../data/storiesList.js";
 
 class Home extends Component {
 	state = {
-		stories: [
-			{
-				id: 1,
-				url: profilePic,
-				userName: "_s_k_y_29",
-			},
-			{ id: 2, url: profilePic, userName: "_s_k_y_29" },
-			{ id: 3, url: profilePic, userName: "_s_k_y_29" },
-			{ id: 4, url: profilePic, userName: "_s_k_y_29" },
-		],
-		posts: [
-			{
-				id: 1,
-				url: image,
-				userName: "_s_k_y_29",
-				liked: false,
-			},
-			{ id: 2, url: image, userName: "_s_k_y_29", liked: false },
-			{ id: 3, url: image, userName: "_s_k_y_29", liked: false },
-			{ id: 4, url: image, userName: "_s_k_y_29", liked: false },
-			{ id: 5, url: image, userName: "_s_k_y_29", liked: false },
-			{ id: 6, url: image, userName: "_s_k_y_29", liked: false },
-		],
+		stories: stories,
+		posts: posts,
 	};
 	handleLike = id => {
 		const posts = this.state.posts;
 		const index = posts.findIndex(post => {
 			if (post.id === id) return true;
 		});
-		posts[index].liked = true;
+		posts[index].liked === true
+			? (posts[index].liked = false)
+			: (posts[index].liked = true);
+		this.setState({ posts });
+	};
+	handleSave = id => {
+		const posts = this.state.posts;
+		const index = posts.findIndex(post => {
+			if (post.id === id) return true;
+		});
+		posts[index].bookmarked === true
+			? (posts[index].bookmarked = false)
+			: (posts[index].bookmarked = true);
 		this.setState({ posts });
 	};
 
@@ -65,7 +56,9 @@ class Home extends Component {
 										url={post.url}
 										userName={post.userName}
 										liked={post.liked}
+										bookmarked={post.bookmarked}
 										onLike={this.handleLike}
+										onSave={this.handleSave}
 									/>
 								))}
 							</div>
