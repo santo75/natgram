@@ -35,7 +35,7 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Navbar />
+				<Navbar className="d-none d-md-block" />
 				<div className="container">
 					<div className="row">
 						<div className="col-12 col-md-7">
