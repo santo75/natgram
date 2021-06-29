@@ -11,25 +11,35 @@ class Home extends Component {
 		stories: stories,
 		posts: posts,
 	};
+	getIndex = (arr, id) => {
+		return arr.findIndex(item => {
+			if (item.id === id) return true;
+		});
+	};
 	handleLike = id => {
 		const posts = this.state.posts;
-		const index = posts.findIndex(post => {
-			if (post.id === id) return true;
-		});
-		posts[index].liked === true
-			? (posts[index].liked = false)
-			: (posts[index].liked = true);
+		const index = this.getIndex(posts, id);
+
+		if (posts[index].totalLike !== 0) {
+			posts[index].totalLike -= 1;
+		} else {
+			posts[index].totalLike += 1;
+		}
 		this.setState({ posts });
 	};
 	handleSave = id => {
 		const posts = this.state.posts;
-		const index = posts.findIndex(post => {
-			if (post.id === id) return true;
-		});
+		const index = this.getIndex(posts, id);
 		posts[index].bookmarked === true
 			? (posts[index].bookmarked = false)
 			: (posts[index].bookmarked = true);
 		this.setState({ posts });
+	};
+	handleStoryView = id => {
+		const stories = this.state.stories;
+		const index = this.getIndex(stories, id);
+		stories[index].seen = true;
+		this.setState({ stories });
 	};
 
 	render() {
@@ -43,8 +53,11 @@ class Home extends Component {
 								{this.state.stories.map(story => (
 									<Story
 										key={story.id}
+										id={story.id}
 										image={story.url}
 										userName={story.userName}
+										onStoryView={this.handleStoryView}
+										seen={story.seen}
 									/>
 								))}
 							</div>
@@ -55,10 +68,10 @@ class Home extends Component {
 										id={post.id}
 										url={post.url}
 										userName={post.userName}
-										liked={post.liked}
 										bookmarked={post.bookmarked}
 										onLike={this.handleLike}
 										onSave={this.handleSave}
+										totalLike={post.totalLike}
 									/>
 								))}
 							</div>

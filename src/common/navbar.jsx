@@ -3,7 +3,7 @@ import profilePic from "../assets/image/profilePic.jpeg";
 const Navbar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-			<div className="container-fluid">
+			<div className="container">
 				<a className="navbar-brand natgram-text" href="#">
 					NATGRAM
 				</a>
@@ -23,16 +23,19 @@ const Navbar = () => {
 						<li className="nav-item active">
 							<a className="nav-link" href="#">
 								<i className="fa fa-home"></i>
+								<span className="ms-2 fs-6">Home</span>
 							</a>
 						</li>
-						<li className="nav-item active">
+						<li className="nav-item active n13-mt">
 							<a className="nav-link" href="#">
 								<i className="fa fa-commenting"></i>
+								<span className="ms-2 fs-6">Messages</span>
 							</a>
 						</li>
-						<li className="nav-item active">
+						<li className="nav-item active n13-mt">
 							<a className="nav-link" href="#">
 								<i className="fa fa-heart-o"></i>
+								<span className="ms-2 fs-6">Notifications</span>
 							</a>
 						</li>
 						<li className="nav-item active">

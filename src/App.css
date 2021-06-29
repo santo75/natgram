@@ -44,10 +44,15 @@
 .story-image {
 	border-radius: 50%;
 }
+.story-added {
+	border: 2px solid rgb(168, 4, 4);
+}
+.story-seen {
+	border: 2px solid rgb(228, 216, 216);
+}
 .story {
 	height: 70px;
 	width: 70px;
-	border: 2px solid rgb(168, 4, 4);
 	border-radius: 50%;
 	padding: 2px;
 }
@@ -75,7 +80,8 @@
 	font-size: 13px;
 	font-weight: bold;
 }
-i:hover {
+i:hover,
+svg:hover {
 	cursor: pointer;
 }
 .like-text {
@@ -87,4 +93,32 @@ i:hover {
 	height: 60px;
 	width: 60px;
 	border-radius: 50%;
+}
+.cursor:hover {
+	cursor: pointer;
+	color: blue;
+	font-weight: bold;
+}
+.feed-post-bottom-section {
+	margin: -5px 0 -3px 0;
+}
+.comment-box:focus {
+	outline: none;
+}
+.comment-box {
+	margin-top: -10px;
+	color: rgb(13, 46, 105);
+}
+@media (max-width: 700px) {
+	.n13-mt {
+		margin-top: -13px;
+	}
+}
+@media (min-width: 1200px) {
+	.story-modal-md {
+		height: 400px;
+	}
+}
+.n5-mb {
+	margin-bottom: -8px;
 }
