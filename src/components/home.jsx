@@ -33,7 +33,7 @@ class Home extends Component {
 	handleLikeOnDoubleTap = id => {
 		this.timeStamp.push(new Date().getTime());
 		const n = this.timeStamp.length;
-		if (n === 2 && this.timeStamp[1] - this.timeStamp[0] < 1200)
+		if (n === 2 && this.timeStamp[1] - this.timeStamp[0] < 300)
 			this.handleLike(id);
 		if (n !== 1) this.timeStamp = [];
 	};
