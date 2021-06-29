@@ -2,7 +2,16 @@ import profilePic from "../assets/image/profilePic.jpeg";
 import PostModal from "./postmodal";
 
 const Post = props => {
-	const { url, userName, bookmarked, id, onLike, onSave, totalLike } = props;
+	const {
+		url,
+		userName,
+		bookmarked,
+		id,
+		onLike,
+		onSave,
+		totalLike,
+		onDoubleTap,
+	} = props;
 	return (
 		<div className="mb-3 bg-light w-100 natgram-feed-post">
 			<div className="feed-post-top-section p-2 d-flex flex-row">
@@ -17,7 +26,7 @@ const Post = props => {
 				</div>
 			</div>
 			<div className="feed-post-middle-section w-100">
-				<img className="w-100" src={url} />
+				<img onClick={() => onDoubleTap(id)} className="w-100" src={url} />
 				<div className="d-flex flex-row px-2 my-2">
 					<i
 						className={

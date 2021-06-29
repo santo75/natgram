@@ -16,16 +16,26 @@ class Home extends Component {
 			if (item.id === id) return true;
 		});
 	};
+	constructor() {
+		super();
+		this.timeStamp = [];
+	}
 	handleLike = id => {
 		const posts = this.state.posts;
 		const index = this.getIndex(posts, id);
-
 		if (posts[index].totalLike !== 0) {
 			posts[index].totalLike -= 1;
 		} else {
 			posts[index].totalLike += 1;
 		}
 		this.setState({ posts });
+	};
+	handleLikeOnDoubleTap = id => {
+		this.timeStamp.push(new Date().getTime());
+		const n = this.timeStamp.length;
+		if (n === 2 && this.timeStamp[1] - this.timeStamp[0] < 1500)
+			this.handleLike(id);
+		if (n !== 1) this.timeStamp = [];
 	};
 	handleSave = id => {
 		const posts = this.state.posts;
@@ -69,9 +79,10 @@ class Home extends Component {
 										url={post.url}
 										userName={post.userName}
 										bookmarked={post.bookmarked}
+										totalLike={post.totalLike}
 										onLike={this.handleLike}
 										onSave={this.handleSave}
-										totalLike={post.totalLike}
+										onDoubleTap={this.handleLikeOnDoubleTap}
 									/>
 								))}
 							</div>
